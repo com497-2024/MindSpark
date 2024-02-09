@@ -1,1 +1,9 @@
-
+<html>
+<div class="about-section">
+  <h1>About Us Page</h1>
+<hr>
+  <p>This is our Capstone project by Luis Ortiz-Vega and Tierra Doughty.</p>
+<p>MindSpark is an educational gaming website that will allow students and educators to learn specific subjects by using AI in a fun and interactive way.</p>
+<p>The integration of AI will help generate specific topics based on student and educator needs.</p>
+</div>
+</html>
