@@ -1,6 +1,6 @@
 <html>
 <button>
-<div class="about-section">
+<div class="about-section"> style="background-color:#FFA500;">
   <h1>About Us Page</h1>
 <hr>
   <p>This is our Capstone project by Luis Ortiz-Vega and Tierra Doughty.</p>
