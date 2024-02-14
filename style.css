@@ -27,17 +27,20 @@
 .column {
   float: left;
   width: 48%;
-  padding: 10px;
+  padding: 50px;
   padding-bottom: 30%;
   height: 500px;
   border-radius: 25px;
   margin-right: 20px;
-  margin-bottom: 20px; /* Add margin to create space between columns */
+  margin-bottom: 20px;
+  list-style-type: square; /* Add margin to create space between columns */
 }
 
 .column-container {
   width: 100%; /* Adjust this width according to your layout */
-  margin: 0 auto; /* Center the container horizontally */
+  margin: 0 auto;
+  text-align: center; 
+  /* Center the container horizontally */
 }
 
 /* Clear floats after the columns */
@@ -75,6 +78,7 @@ ul {
   list-style: none;
 }
 
+
 a {
   text-decoration: none;
   color: inherit;
@@ -104,7 +108,8 @@ button {
 }
 
 .logo {
-  margin-right: 1.5rem;
+  margin-right: 2rem;
+  margin-left: -2rem; /*padding to the left to make it move*/
 }
 
 #nav-menu {
@@ -136,8 +141,7 @@ button {
   margin: 0 0.6rem;
 }
 
-.menu-bar .nav-link:hover,
-.dropdown-link:hover {
+.menu-bar .nav-link:hover {
   color: var(--primary-color);
 }
 
@@ -145,7 +149,7 @@ button {
 .nav-end,
 .menu-bar,
 .right-container,
-.right-container .search {
+.right-container {
   display: flex;
   align-items: center;
 }
@@ -192,14 +196,11 @@ button {
   }
 
 
-  .menu.show,
-  .dropdown.active {
+  .menu.show {
     display: block;
   }
 
-  .dropdown ul {
-    padding-left: 0.3rem;
-  }
+  
 
   .menu-bar {
     display: flex;
@@ -232,8 +233,22 @@ button {
   }
 }
 /*This is the footer color ands such*/
-.footer{
-  padding-bottom: 3%;
-  padding-top: 5%;
-    background-color: rgb(214, 182, 112);
+.footer {
+  background-color: #8338EC; /* Light background color */
+  padding: 20px; /* Padding around the footer content */
+  text-align: center; /* Center-align the text */
+}
+
+.footer-text {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Adjust font size */
+  color: #6c757d; /* Text color */
+}
+.footer-link {
+  color: black; /* Link color */
+  text-decoration: none; /* Add underline */
+}
+.footer-link:hover {
+  color: #007bff; /* Link color */
+  text-decoration: underline; /* Add underline */
 }
