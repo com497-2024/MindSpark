@@ -13,7 +13,7 @@ int main() {
         {"What is the capital of France?", {"London", "Berlin", "Paris", "Rome"}, 3},
         {"What is the capital of Italy?", {"London", "Berlin", "Paris", "Rome"}, 4},
         {"What is the capital of Germany?", {"London", "Berlin", "Paris", "Rome"}, 2},
-		{"What is the capital of England?", {"London", "Berlin", "Paris", "Rome"}, 1},
+	{"What is the capital of England?", {"London", "Berlin", "Paris", "Rome"}, 1},
         // Add more questions here
     };
 
@@ -43,8 +43,8 @@ int main() {
                     std::cout << "Incorrect. Try again." << std::endl;
                 }
                 else {
-					std::cout << "Incorrect. The correct answer is " << q.options[q.correctAnswer - 1] << std::endl;
-				}    
+			std::cout << "Incorrect. The correct answer is " << q.options[q.correctAnswer - 1] << std::endl;
+		}    
               
             }
         }
