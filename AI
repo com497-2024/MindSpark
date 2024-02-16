@@ -1,1 +1,7 @@
+import nltk
+nltk.download('punkt')
 
+sentence = "Hello, I am an AI programming assistant."
+tokens = nltk.word_tokenize(sentence)
+
+print(tokens)
