@@ -1,0 +1,61 @@
+Django Model code:
+from django.db import models
+
+class Image(models.Model):
+    title = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='images')
+
+    def __str__(self):
+        return self.title
+
+Django ModelForm:
+from django import forms
+from .models import Image
+
+class ImageForm(forms.ModelForm):
+    class Meta:
+        model = Image
+        fields = ('title', 'image')
+
+Django View:
+from django.shortcuts import render
+from .forms import ImageForm
+
+def upload_image(request):
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            img_obj = form.save()
+    else:
+        form = ImageForm()
+        img_obj = None
+
+    return render(request, 'upload.html', {'form': form, 'img_obj': img_obj})
+
+Django URL mapping:
+from django.urls import path
+from .views import upload_image
+
+urlpatterns = [
+    path('upload/', upload_image, name='upload_image'),
+    # Add other URLs as needed
+]
+HTML Template:
+<!-- upload.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Add a new image</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if img_obj %}
+        <h3>Successfully uploaded: {{ img_obj.title }}</h3>
+        <img src="{{ img_obj.image.url }}" alt="Uploaded Image" style="max-height: 300px;">
+    {% endif %}
+</div>
+{% endblock %}
