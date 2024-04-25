@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.resume{
+  color:#fff; 
+  background: black;
+  padding-top: 20px;
+  padding-bottom:50px;
+}
+
+
+
+/*resume cards*/
+.resume .serv-content .card{
+  width: calc(33% - 20px);
+  background: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+
+}
+
+/*resume hoverover card*/
+.resume .serv-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resume .serv-content .card {
+  flex: 1 1 300px; /* Adjust width as needed */
+  margin: 10px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  height: 500px; /* Increase height 250px orignal*/
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the background image */
+}
+
+.resume .serv-content .card:hover {
+  background: #a5a195;
+  transform: translateY(-5px); /* Move card up on hover */
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+  text-decoration: underline;
+}
+
+.resume .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.resume .serv-content .card:hover .box {
+  transform: scale(1.1); /*1.05 default so this is the text scale for the "for parents, students, etc."*/
+}
+
+.resume .serv-content .card i {
+  font-size: 50px;
+  color: #fed049;
+  transition: color 0.3s ease;
+}
+
+.resume .serv-content .card:hover i {
+  color: #fff;
+}
+
+.resume .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5dc;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:root {
+  --dark-grey: #333333;
+  --medium-grey: #636363;
+  --light-grey: #eeeeee;
+  --ash: #f4f4f4;
+  --primary-color: black; /*#7CB518 for green color*/
+  --white: #ffffff;
+  --border: 1px solid var(--light-grey);
+  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+/*this styling is for visual clarity of the home screen. I know there is an internal and external css sheet rn but whatever*/
+* {
+  box-sizing: border-box;
+}
+
+.text-3 {
+  font-size: 25px;
+  margin: 5px 0;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.text-3 span {
+  color: #FED049;
+  font-weight: 500;
+  padding-bottom: 35px;
+}
+
+.what{
+text-align: center;
+}
+
+h2.title{
+  text-align: center;
+}
+
+/*Space between button and hover card sections*/
+div.cards{
+  padding-top: 80px;
+}
+
+/*Try Now Button*/
+button.TryNow{
+  background-color: var(--primary-color); /* Set background color to black */
+  color: white; /* Set text color to white */
+  padding: 10px 20px; /* Add padding for better appearance */
+  border: none; /* Remove default button border */
+  border-radius: 7.5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: inline-block; /* Make the button an inline-block element */
+  font-size: 60px;
+  font-weight: 500px;
+  font-weight: 50px;
+}
+
+button.TryNow:hover {
+  background-color: transparent; /* Set background color to transparent */
+  border: 5px solid #FED049; /* Add yellow border on hover */
+  color: #FED049; /* Change text color to yellow on hover #FED049 */
+  font-style: italic;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center; /* Center the cards vertically */
+}
+
+.card {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 10px; /* Add margin to create space between cards */
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/*
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}*/
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.card .info h1 {
+  margin: 0px;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+
+
+.card:hover .info button {
+  opacity: 1; /* Make button visible on hover */
+}
+
+
+
+
+
+h1{
+padding-top: 20px;
+font-size: 100px;
+}
+
+.intro{
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding: 20px;
+}
+
+body {
+  font-family: inherit;
+  background-image: var(--white);
+  color: var(--dark-grey);
+  letter-spacing: -0.4px;
+
+}
+/*   background: url("shiny-ge022d475c_1920.jpg") no-repeat center;
+ */
+
+ul {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
+}
+
+.btn {
+  display: inline-block; /* Change from block to inline-block to make them inline */
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 0.6rem 8rem; /* Adjust padding to reduce the gap */
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  margin: 1px; /* Add margin to create space between buttons */
+}
+.btn:hover{
+  background-color: #F4C430; /*#507019*/
+  color:white;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.icon {
+  background-color: var(--light-grey);
+  border-radius: 10px;
+}
+
+
+.logo {
+    margin-right: 2rem;
+    margin-left: -2rem; /*padding to the left to make it move*/
+    }
+    
+#nav-menu {
+  border-bottom: var(--border);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+  height: 90px;
+  padding: 1.2rem 3rem;
+}
+
+.menu {
+  position: relative;
+  background: var(--white);
+}
+
+
+
+.menu-bar .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  padding: 0.3rem;
+  min-width: 60px;
+  margin: 0 0.6rem;
+}
+
+.menu-bar .nav-link:hover {
+  color: var(--primary-color);
+  font-style: italic;
+  text-decoration: underline;
+
+}
+
+
+.nav-start,
+.nav-end,
+.menu-bar,
+.right-container,
+.right-container {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.right-container {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+
+#hamburger {
+  display: none;
+  padding: 0.1rem;
+  margin-left: 1rem;
+  font-size: 1.9rem;
+}
+
+@media (max-width: 1100px) {
+  #hamburger {
+    display: block;
+  }
+
+  .container {
+    padding: 1.2rem;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 87px;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .menu-bar li:first-child ul:nth-child(1) {
+    border-right: none;
+    border-bottom: var(--border);
+  }
+
+
+  .menu.show {
+    display: block;
+  }
+
+  
+
+  .menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .menu-bar .nav-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .menu-bar > li:not(:last-child) {
+    padding-bottom: 0.5rem;
+    border-bottom: var(--border);
+  }
+}
+
+@media (max-width: 600px) {
+  .right-container {
+    display: none;
+  }
+}
+/*This is the footer color ands such*/
+.footer {
+  background-color: black; /* Light green background color #7CB518*/
+  padding: 20px; /* Padding around the footer content */
+  text-align: center; /* Center-align the text */
+}
+
+.footer-text {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Adjust font size */
+  color: var(--white); /* Text color */
+}
+.footer-link {
+  color: var(--white); /* Link color */
+  text-decoration: none; /* Add underline */
+}
+.footer-link:hover {
+  color: #F4C430; /* Link color */
+  text-decoration: underline; /* Add underline */
+  font-style: italic;
+}
+
+
