@@ -1,8 +1,24 @@
 <html>
-<div class="Contact-section"> style="background-color:#FB5607;">
-<h1 class = "Contact"> Contact:</h1>
-<hr>
-<p> luis.ortiz-vega@saintleo.edu </p>
-<p> tierra.doughty@email.saintleo.edu </p>
-</div>
+<head>
+  <title>MindSpark - Contact Us</title>
+  <style>
+    .contact-section {  /* Match the class name in the div */
+      background-color: #EC33FF;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <hr>
+    <p>For more information, contact us at:</p>
+    <p>luis.ortiz-vega@saintleo.edu</p>
+    <p>tierra.doughty@email.saintleo.edu</p>
+  </div>
+</body>
 </html>
