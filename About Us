@@ -1,9 +1,28 @@
 <html>
-<div class="about-section"> style="background-color:#FFA500;">
-  <h1 class = "about"> About Us:</h1>
+<button>
+<div class="about-section">
+<style>
+      .about-section {
+        background-color: #FFA500;
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      /
+    </style>
+  <h1>About Us Page</h1>
 <hr>
 <p>This is our Capstone project by Luis Ortiz-Vega and Tierra Doughty.</p>
-<p>MindSpark is an educational gaming website that will allow students and educators to learn specific subjects by using AI in a fun and interactive way.</p>
+<p> We are two college students who thrive to help other students study in a meaningful way.
+<p>MindSpark is an educational quiz and game making website that will allow students and educators to learn specific subjects by using AI.</p>
 <p>The integration of AI will help generate specific topics based on student and educator needs.</p>
+ <h2>Our Goal</h2>
+<p> Our goal is for students to study and learn various subjects in a fun, self-paced, and interactive way.</p>
+<p> MindSpark enables parents, teachers, or educators to create a quiz or game for the students to study with.</p>
+
+</button>
 </div>
 </html>
