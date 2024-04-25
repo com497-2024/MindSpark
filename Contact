@@ -2,7 +2,7 @@
 <head>
   <title>MindSpark - Contact Us</title>
   <style>
-    .contact-section {  /* Match the class name in the div */
+    .contact-section { 
       background-color: #EC33FF;
       padding: 20px;
     }
